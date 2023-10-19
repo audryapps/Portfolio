@@ -260,7 +260,7 @@ body .page-content {
     width:0;
     background: #262658;
     border-left: 1px solid #000;
-    animation: escribir 5s steps(30)  alternate;
+    animation: escribir 3s steps(30)  alternate;
 }
 
 
