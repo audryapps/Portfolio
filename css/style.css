@@ -207,13 +207,13 @@ body .page-content {
 
 .glitch:before {
   animation: glitch-it 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94) both infinite;
-  color: #00FFFF;
+  color: #377070;
   z-index: -1;
 }
 
 .glitch:after {
   animation: glitch-it 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94) reverse both infinite;
-  color: #FF00FF;
+  color: #4b234b;
   z-index: -2;
 }
 
