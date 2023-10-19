@@ -2,7 +2,7 @@
 
 
 
-
+@import url('https://fonts.googleapis.com/css2?family=Odor+Mean+Chey&family=Oswald&family=Ubuntu&display=swap');
 
 
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, div
@@ -90,6 +90,10 @@ header{
   top: 30%;
   width: 66%;
   left:  90px;
+  z-index: 5;
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 1.3em;
+  letter-spacing: -1.5px;
 }
 
 .ab{
@@ -307,6 +311,53 @@ body .page-content {
 
 /*end poster effects*/
 
+/*parrafo start*/
+.ls{
+ background-color:  #14122c;
+ filter: drop-shadow(0 2px 5px rgba(0, 0, 0, 0)); 
+ 
+  box-shadow: 16px 14px 20px #0000008c;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+
+
+.ls::before{
+  content: "";
+  position: absolute;
+  height: 600px;
+  width: 600px;
+  background-image: conic-gradient(blue 20deg, transparent 120deg);
+  animation: rotar 2s linear infinite;
+}
+
+.ls::after{
+  content: "";
+  position: absolute;
+  height: 370px;
+  width: 470px;
+  background-color: #262658;
+  border-radius: 15px;
+  box-shadow: inset 16px 14px 20px #000000;
+}
+
+@keyframes rotar {
+  from{
+    transform:rotate(0deg) ;
+
+  }
+  to{
+    transform: rotate(360deg);
+  }
+}
+
+
+/*parrafo start*/
 
 /* post effects*/
 #post{
