@@ -1,0 +1,325 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900");
+
+
+
+
+
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, div
+pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q,
+s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li,
+figure, header, nav, section, article, aside, footer, figcaption {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+}
+
+
+header, nav, section, article, aside, footer, hgroup {
+  display: block;
+}
+
+.bd{
+  background-color: #0e0a1a;
+}
+
+/* Header Start */
+
+header{
+  justify-content: space-between;
+  align-items: center;
+  padding: 35px;
+  background-color: #262658;
+  height: 60px ;
+  padding-bottom: 55px;
+  position: fixed;
+  z-index: 10;
+  width: 100%;
+  filter: drop-shadow(0 12px 8px rgba(0, 0, 0, 0.7));
+}
+
+.navbar{
+  height: 30px;
+}
+
+.logo-img{
+  width: 70px;
+  margin-right: 10px;
+}
+
+.manu{
+  color: #ffffff;
+  display: inline-block;
+}
+
+@media screen and (max-width: 770px) {
+  .navbar-brand{
+    display: block;
+    width: 100%;
+    position: fixed;
+    top: 0;
+  }
+  .navbar-toggler{
+    display: block;
+    position: fixed;
+    right: 20px;
+  }
+}
+
+
+/* Header End */
+
+/* About Start */
+
+.about{
+  padding: 55px;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+
+}
+
+
+.abo{
+  color: white;
+  text-align: justify;
+  height: 50px;
+  /* centrado vertical */
+  position: absolute;
+  top: 30%;
+  width: 66%;
+  left:  90px;
+}
+
+.ab{
+  color:white;
+  text-align: center;
+  margin-top: 50px;
+}
+
+/* About End */
+
+
+.clearfix:after {
+    content: ".";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    line-height: 0;
+    height: 0;
+  }
+  
+  .clearfix {
+    display: inline-block;
+  }
+  
+  html[xmlns] .clearfix {
+    display: block;
+  }
+  
+  * html .clearfix {
+    height: 1%;
+  }
+
+  html, body {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    background-color: #000020;
+    font-size: 16px;
+    -ms-text-size-adjust: 100%;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  html,
+body {
+  background: #000020;
+  font-family: 'Poppins', sans-serif;
+}
+
+body .page-content {
+    margin-top: 120px;
+    background-color: #14122c;
+    padding: 60px;
+    border-radius: 23px;
+    filter: drop-shadow(0 12px 8px rgba(0, 0, 0, 0.7));
+  }
+
+  .main-banner {
+    min-height: 380px;
+    border-radius: 23px;
+    padding: 50px 60px;
+    background-color: #262658 ;
+    filter: drop-shadow(0 12px 8px rgba(0, 0, 0, 0.7));
+  }
+  
+  
+  
+
+  
+ .img-icon{
+    width: 40px;
+    height:40px;
+    margin: 0 15px;
+    filter: drop-shadow(0 2px 5px rgba(0, 0, 0, 0.7)); 
+    
+ }
+
+
+
+ .l{
+  width: 45px;
+  height:45px;
+  
+ }
+
+ /* glitch */
+
+ .glitch-wrapper {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  text-align: center;
+  background-color: #262658;
+}
+
+.glitch {
+  position: relative;
+  font-size: 50px;
+  font-weight: bold;
+  color: #FFFFFF;
+  letter-spacing: 3px;
+  z-index: 1;
+}
+
+.glitch:before,
+.glitch:after {
+  display: block;
+  content: attr(data-text);
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0.8;
+}
+
+.glitch:before {
+  animation: glitch-it 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94) both infinite;
+  color: #00FFFF;
+  z-index: -1;
+}
+
+.glitch:after {
+  animation: glitch-it 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94) reverse both infinite;
+  color: #FF00FF;
+  z-index: -2;
+}
+
+@keyframes glitch-it {
+  0% {
+     transform: translate(0);
+  }
+  20% {
+     transform: translate(-2px, 2px);
+  }
+  40% {
+     transform: translate(-2px, -2px);
+  }
+  60% {
+     transform: translate(2px, 2px);
+  }
+  80% {
+     transform: translate(2px, -2px);
+  }
+  to {
+     transform: translate(0);
+  }
+}
+ /* end glitch*/
+
+ /*mq escribir*/
+ .cont {
+	margin: auto;
+	display: table;
+}
+
+.im { 
+	position: relative; 
+	float: left;
+	background: #262658;
+	color: #fff;
+	font-size: 2.5em;
+  justify-content: left;
+}
+
+.im span {
+    position:absolute;
+    right:0;
+    width:0;
+    background: #262658;
+    border-left: 1px solid #000;
+    animation: escribir 5s steps(30)  alternate;
+}
+
+
+
+
+@keyframes escribir {
+    from { width: 100% }
+    to { width:0 }
+}
+
+.full{
+  font-size: 1.5em;
+  top: 15px;
+}
+
+/*end mq escribir*/
+
+/*zoom media*/
+
+.zoom:hover {
+  transform: scale(1.5); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+
+/*end zoom media*/
+
+/*poster effects*/
+
+#poster{
+  height: 200px;
+  width: 300px;
+  background: url(../images/Manu.jpg) no-repeat center;
+  background-size: cover;
+  margin: 20px auto;
+  border-style:solid;
+  border-radius: 80px;
+  border: #151531 10px solid;
+
+}
+
+#poster:hover{
+  box-shadow: 0px 0px 50px rgba(0,0,0, 1);
+ transition: box-shadow .1s, transform;
+}
+
+/*end poster effects*/
+
+
+/* post effects*/
+#post{
+  height: 300px;
+  width: 100px;
+  background: url(../images/Main_Logo__1_-removebg-preview.png) no-repeat center;
+  background-size: cover;
+  margin: auto;
+}
+
+#post:hover{
+ 
+ transition: box-shadow .1s, transform;
+}
+
+/* end post effects*/
