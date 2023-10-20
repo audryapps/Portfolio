@@ -155,6 +155,8 @@ body .page-content {
     background-color: #262658 ;
     filter: drop-shadow(0 12px 8px rgba(0, 0, 0, 0.7));
   }
+
+  /*breakpoints poster*/
   
   @media (max-width: 767px) {
     body .page-content {
@@ -207,7 +209,7 @@ body .page-content {
   }
   
   
-
+/* end breakpoints poster*/
   
  .img-icon{
     width: 40px;
@@ -362,13 +364,13 @@ body .page-content {
 .ls{
  background-color:  #14122c;
  filter: drop-shadow(0 2px 5px rgba(0, 0, 0, 0)); 
- 
   box-shadow: 16px 14px 20px #0000008c;
   position: relative;
   overflow: hidden;
   display: flex;
   align-items: center;
   justify-content: center;
+  
 
 }
 
@@ -377,10 +379,11 @@ body .page-content {
 .ls::before{
   content: "";
   position: absolute;
-  height: 600px;
-  width: 600px;
+  height: 700px;
+  width: 700px;
   background-image: conic-gradient(blue 20deg, transparent 120deg);
   animation: rotar 2s linear infinite;
+  text-align: left;
 }
 
 .ls::after{
@@ -391,6 +394,7 @@ body .page-content {
   background-color: #262658;
   border-radius: 15px;
   box-shadow: inset 16px 14px 20px #000000;
+  text-align: left;
 }
 
 @keyframes rotar {
@@ -403,8 +407,32 @@ body .page-content {
   }
 }
 
+@media (max-width: 1600px) {
 
-/*parrafo start*/
+
+  .abo{
+    word-wrap: break-word;
+    white-space: 0.03;
+    width: 80%;
+    height: 90px;
+    font-size: 1.8vw;
+    text-align: justify;
+    align-content: center;
+    top: 55px;
+    left: 60px;
+
+  }
+
+  .ls{
+      height: 390px;
+      max-width: 500px;  
+  }
+ 
+
+}
+
+
+/*parrafo end*/
 
 /* post effects*/
 #post{
