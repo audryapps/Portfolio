@@ -750,11 +750,17 @@ body .page-content {
       margin-top: 10px;
   }
 
+  .page-content.new{
+    max-width: 624.8px;
+
+  }
+
 }
 
 @media (max-width: 600px) {
 
 
+  
   .abo{
     word-wrap: break-word;
     white-space: 0.03;
@@ -841,10 +847,12 @@ body .page-content {
 #post{
 
   height: 300px;
-  width: 100px;
+  width: 500px;
   background: url(../images/Main_Logo__1_-removebg-preview.png) no-repeat center;
   background-size: cover;
-  margin: 40px auto;
+  margin: 30px auto;
+  z-index: 1000;
+  align-items: end;
 }
 
 #post:hover{
@@ -868,15 +876,15 @@ body .page-content {
   text-align: center;
   text-decoration: none; 
   top: 50%;
-	left: 43%;
+	left: 40%;
   transform: translate(-50%, -50px);
   padding: 15px;
-  font-family: 'Six Caps', sans-serif;
+  font-family: 'Poppins', sans-serif;
   text-transform: uppercase;
   letter-spacing: 0.03em;
   position: relative;
   border-width: 0.1em;
-  font-size: 100px;
+  font-size: 50px;
   line-height: 1em;
   color: #FFFFFF;
   z-index: 1;  
@@ -974,3 +982,137 @@ body .page-content {
 
 
 /* end about me effects*/
+
+
+/*Projects start section*/
+
+.projects{
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: -50px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 40px;
+}
+.svg-wrapper {
+  height: 60px;
+	margin: 0 auto;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 320px;
+}
+
+.shape {
+  fill: transparent;
+  stroke-dasharray: 140 540;
+  stroke-dashoffset: -474;
+  stroke-width: 8px;
+  stroke: #3f0d9b;
+}
+
+.text {
+  color: #fff;
+  font-family: 'Roboto Condensed';
+  font-size: 40px;
+  letter-spacing: 8px;
+  line-height: 32px;
+  position: relative;
+  top: -48px;
+}
+
+@keyframes draw {
+  0% {
+    stroke-dasharray: 140 540;
+    stroke-dashoffset: -474;
+    stroke-width: 8px;
+  }
+  100% {
+    stroke-dasharray: 760;
+    stroke-dashoffset: 0;
+    stroke-width: 8px;
+  }
+}
+
+.svg-wrapper:hover .shape {
+  -webkit-animation: 0.5s draw linear forwards;
+  animation: 0.5s draw linear forwards;
+}
+/*Projects end section*/
+
+/*Projects hover*/
+.hover-img {
+  background-color: #000;
+  color: #fff;
+  display: inline-block;
+  margin: 8px;
+  max-width: 320px;
+  min-width: 240px;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+  width: 100%;
+}
+
+.hover-img * {
+  box-sizing: border-box;
+  transition: all 0.45s ease;
+}
+
+.hover-img::before,
+.hover-img::after {
+  background-color: rgba(0, 0, 0, 0.5);
+  border-top: 32px solid rgba(0, 0, 0, 0.5);
+  border-bottom: 32px solid rgba(0, 0, 0, 0.5);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  content: '';
+  transition: all 0.3s ease;
+  z-index: 1;
+  opacity: 0;
+  transform: scaleY(2);
+}
+
+.hover-img img {
+  vertical-align: top;
+  max-width: 100%;
+  backface-visibility: hidden;
+}
+
+.hover-img figcaption {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  align-items: center;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  line-height: 1.1em;
+  opacity: 0;
+  z-index: 2;
+  transition-delay: 0.1s;
+  font-size: 24px;
+  font-family: sans-serif;
+  font-weight: 400;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.hover-img:hover::before,
+.hover-img:hover::after {
+  transform: scale(1);
+  opacity: 1;
+}
+
+.hover-img:hover > img {
+  opacity: 0.7;
+}
+
+.hover-img:hover figcaption {
+  opacity: 1;
+}
