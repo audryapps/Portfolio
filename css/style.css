@@ -371,6 +371,52 @@ body .page-content {
  transition: box-shadow .1s, transform;
 }
 
+@media screen and (max-width: 700px) {
+
+  #post{
+    height: 200px;
+    width: 80px;
+    margin-top: 150px;
+  }
+
+  #post:hover{
+ 
+    transition: box-shadow .1s, transform;
+   }
+
+
+}
+
+@media screen and (max-width: 500px) {
+
+  #post{
+    height: 200px;
+    width: 80px;
+  }
+
+  #post:hover{
+ 
+    transition: box-shadow .1s, transform;
+   }
+
+
+}
+
+@media screen and (max-width: 400px) {
+
+  #post{
+    height: 200px;
+    width: 80px;
+  }
+
+  #post:hover{
+ 
+    transition: box-shadow .1s, transform;
+   }
+
+
+}
+
 /* end post effects*/
 
 /* about me effects*/
