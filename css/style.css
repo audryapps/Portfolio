@@ -385,7 +385,7 @@ body .page-content {
   text-align: center;
   text-decoration: none; 
   top: 50%;
-	left: 45%;
+	left: 43%;
   transform: translate(-50%, -50px);
   padding: 15px;
   font-family: 'Six Caps', sans-serif;
@@ -447,5 +447,47 @@ body .page-content {
 	width: calc( 400px / 2);
 	height: calc( 200px / 2);
 }
+
+
+
+
+@media screen and (max-width: 1000px) {
+
+  .ab{
+    left: 40%;
+    font-size: 90px;
+  }
+
+}
+
+@media screen and (max-width: 900px) {
+
+  .ab{
+    left: 35%;
+    font-size: 80px;
+  }
+
+}
+
+@media screen and (max-width: 500px) {
+
+  .ab{
+    left: 35%;
+    font-size: 50px;
+  }
+
+}
+
+
+
+@media screen and (max-width: 400px) {
+
+  .ab{
+    left: 30%;
+    font-size: 60px;
+  }
+
+}
+
 
 /* end about me effects*/
