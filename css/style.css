@@ -169,6 +169,42 @@ body .page-content {
     }
 
   }
+
+  @media (max-width: 450px) {
+    body .page-content {
+      padding: 0px 5px;
+    }
+    .main-banner {
+      text-align: center;
+    }
+
+    .poster{
+      height: 300px;
+      width: 30px;
+
+    }
+
+  
+  }
+
+
+  @media (max-width: 400px) {
+    body .page-content {
+      padding: 0px 5px;
+    }
+    .main-banner {
+      text-align: center;
+    }
+
+    .poster{
+      height: 300px;
+      width: 30px;
+
+    }
+
+   
+
+  }
   
   
 
@@ -303,7 +339,7 @@ body .page-content {
 
 /*poster effects*/
 
-#poster{
+.poster{
   height: 200px;
   width: 300px;
   background: url(../images/Manu.jpg) no-repeat center;
@@ -315,7 +351,7 @@ body .page-content {
 
 }
 
-#poster:hover{
+.poster:hover{
   box-shadow: 0px 0px 50px rgba(0,0,0, 1);
  transition: box-shadow .1s, transform;
 }
