@@ -156,6 +156,19 @@ body .page-content {
     filter: drop-shadow(0 12px 8px rgba(0, 0, 0, 0.7));
   }
   
+  @media (max-width: 767px) {
+    body .page-content {
+      padding: 0px 30px;
+    }
+    .main-banner {
+      text-align: center;
+    }
+
+    .poster{
+      padding: 0px 30px;
+    }
+
+  }
   
   
 
