@@ -811,14 +811,13 @@ body .page-content {
 
   .abo{
     word-wrap: break-word;
-    white-space: 0.0em;
     width: 85%;
     height: 90px;
     font-size: 4.5vw;
     text-align: center;
     align-content: center;
     top: 45px;
-    left: 30px;
+    left: 20px;
     padding: 10px;
 
   }
