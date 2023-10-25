@@ -1013,7 +1013,7 @@ body .page-content {
 .projects{
   text-align: center;
   margin-top: 50px;
-  margin-bottom: -6 0px;
+  margin-bottom: -100px;
   font-family: 'Poppins', sans-serif;
   font-size: 40px;
 }
@@ -1153,3 +1153,12 @@ body .page-content {
 }
 
 
+/*contact*/
+
+.contact{
+  text-align: center;
+  margin-top: 100px;
+  margin-bottom: -6 0px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 40px;
+}
