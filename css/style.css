@@ -1145,8 +1145,11 @@ body .page-content {
 /*Projects hover*/
 
 /*Projects video*/
-.video{
-display: inline-table;
-width: 100%;
-height: 100%;
+.hover-img video {
+  vertical-align: top;
+  max-width: 240px;
+  backface-visibility: hidden;
+  max-height:327px;
 }
+
+
