@@ -1078,7 +1078,7 @@ video {
 .tex {
   text-decoration: none;
 }
-.col-md-3 {
+.col-md-3 .col-md-5 {
   position: relative;
   width: 100%;
   padding-right: 15px;
@@ -1115,7 +1115,7 @@ video {
 .dbox p {
   margin-bottom: 0;
   text-decoration: none;
-  margin-top: 25px;
+  margin-top: 45px;
 }
 .dbox p span {
   font-weight: 400;
@@ -1177,7 +1177,7 @@ video {
 
 .contact-wrap {
   background: #262658;
-  margin-left: 35%;
+  margin-left: 0;
   color: white;
   margin-top: -25px;
 }
@@ -1271,4 +1271,10 @@ video {
   display: none;
   font-size: 16px;
   font-weight: bold;
+}
+
+.imgs {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
 }
