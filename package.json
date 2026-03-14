@@ -1,4 +1,7 @@
 {
+  "engines": {
+    "node": "24.x"
+  },
   "dependencies": {
     "bootstrap": "^5.3.2"
   }
